@@ -75,38 +75,72 @@ main hr {
 .sidebar-left {
     min-width: 15%;
     min-height: 100%;
-    padding: 10vh 10px;
     margin-left: 0px;
     border-right: 3px solid grey;
+    color: #00303f;
 }
 
-.sidebar-left ul {
+.sidebar-left {
     display: flex;
     flex-direction: column;
+    margin-top: 9rem;
 }
 
-.sidebar-left li {
-    display: inline-flex;
-    padding: 1em 1em;
+.sidebar-left p {
     font-size: 1.2em;
+    text-align: right;
+    margin: 1.2rem 1rem;
 }
 
-.sidebar-left, .sidebar-right, .stories {
-    margin-top: 6vh;
+
+.sidebar-left h2 {
+    text-align: right;
+    padding-right: 1rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.link-story {
+    color: #00303f;
+    text-decoration: none;
+}
+
+.link-story:hover {
+    text-decoration: underline;
+    text-decoration-color: #cdac81;
+}
+
+.selected-story {
+    color: #cdac81;
+}
+
+.selected-story:hover {
+    text-decoration: none;
 }
 
 /* Media Sidebar */
 
+.sidebar-right, .stories {
+    margin-top: 12rem;
+}
+
 .sidebar-right {
     min-height: 100%;
-    padding: 10vh 10px;
+    padding-left: 2rem;
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+    color: #00303f;
 }
 
 .sidebar-right h2 {
-    text-align: right;
+    text-align: left;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem; 
 }
 
 img {
@@ -120,9 +154,9 @@ img {
 /* Story Content */
 
 .stories {
-    text-align: left;
-    margin-top: 9rem;
-    padding: 0 2rem;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 2rem;
     flex: 3;
     width: 50%;
     border-right: 1px dashed grey;
@@ -134,12 +168,10 @@ img {
     font-family: 'Josefin Slab', serif;
     font-size: 1.8rem;
     font-weight: 700;
+    text-align: right;
     margin-bottom: 2rem; 
 }
 
-.content {
-    width: 90%;
-}
 
 .text {
     width: 100%;
