@@ -58,7 +58,7 @@ nav a {
 
 /******************** Main Page ******************/
 
-main {
+form {
     background-color: #f5f4f4;
     display: flex;
     max-width: 1140px;
@@ -118,6 +118,36 @@ main {
     padding-bottom: 3rem;
 }
 
+.message-form {
+    background-color: #cae4db;
+    border-radius: 3%;
+    box-shadow: 2px 2px grey;
+    padding: 1.5rem;
+    text-align: left;
+    color: #00303f;
+}
+
+.message-form p {
+    margin-top: 1rem;
+}
+
+#fullname, #email {
+    width: 90%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background-color: #f5f4f4;
+    border: none;
+    border-radius: 5%;
+}
+
+textarea {
+    width: 90%;
+    background-color: #f5f4f4;
+    border: none;
+}
+
+
+
 .main-content {
     text-align: justify;
     padding-left: 3rem;
@@ -126,6 +156,7 @@ main {
     width: 53%;
     border-right: 1px dashed grey;
 }
+
 
 
 .section-headline {
