@@ -1,97 +1,82 @@
+/******************** Basic Styling ******************/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.container {
-    margin: 0;
+body {
     height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #f5f4f4;
     font-family: 'Open-Sans', 'Arial', sans-serif;
 }
-/* Navigation Bar*/
+
+/******************** Navigation Bar ******************/
 
 header {
-    background-color: #cae4db;
-    width: 100%;
-    position: fixed;
-    min-height: 10vh;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2em;
-    padding: 1em;
+    padding: 1rem;
+    background-color: #cae4db;
+    width: 100%;
+    position: fixed;
+    max-height: 95px;
+}
+
+.logo-link {
+    max-height: 95px;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
-    color: #cdac81;
-    text-decoration: none;
-    font-size: 1.5em;
+    width: auto;
+    height: auto;
+    max-width: 6rem;
+    max-height: 6rem;
+    padding: 0;
+    margin-left: 1.5rem;
 }
 
-.nav-item {
+nav {
     flex: 1;
     max-width: 50%;
     display: flex;
     justify-content: flex-end;
 }
 
-.nav-item li {
+nav a {
     padding: 1em;
-    display: inline;
-}
-
-.nav-item a {
     color: #00303f;
     text-decoration: none;
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
+/******************** Main Page ******************/
 
 main {
     background-color: #f5f4f4;
     display: flex;
-    margin: 0px;
-    min-height: 85vh;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-main hr {
-    color: grey;
-    height: 90%;
-}
+/******************** Sidebar Left ******************/
 
-/* Side Bar Right */
-
-.sidebar-left {
-    min-width: 15%;
-    min-height: 100%;
-    margin-left: 0px;
-    border-right: 3px solid grey;
-    color: #00303f;
-}
 
 .sidebar-left {
     display: flex;
     flex-direction: column;
+    width: 22%;
+    min-height: 100%;
     margin-top: 9rem;
+    border-right: 3px solid grey;
+    color: #00303f;
 }
-
-.sidebar-left p {
-    font-size: 1.2em;
-    text-align: right;
-    margin: 1.2rem 1rem;
-}
-
 
 .sidebar-left h2 {
     text-align: right;
@@ -102,67 +87,47 @@ main hr {
     text-decoration: underline;
 }
 
-.link-story {
+.sidebar-left-content {
+    font-size: 1.2em;
+    text-align: right;
+    padding: 1.2rem 1rem;
+}
+
+.sidebar-left-content.selected {
+    background: #cdac81;
+}
+
+.sidebar-left a {
     color: #00303f;
     text-decoration: none;
 }
 
-.link-story:hover {
+.sidebar-left a:hover {
     text-decoration: underline;
     text-decoration-color: #cdac81;
 }
 
-.selected-story {
-    color: #cdac81;
-}
-
-.selected-story:hover {
+.sidebar-left .selected-link:hover {
     text-decoration: none;
 }
 
-/* Media Sidebar */
+/******************** Text Content (Middle Part) ******************/
 
-.sidebar-right, .stories {
+.sidebar-right, .main-content {
     margin-top: 12rem;
+    padding-bottom: 3rem;
 }
 
-.sidebar-right {
-    min-height: 100%;
-    padding-left: 2rem;
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-    color: #00303f;
-}
-
-.sidebar-right h2 {
-    text-align: left;
-    font-family: 'Josefin Slab', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 2rem; 
-}
-
-img {
-    width: auto;
-    height: auto;
-    max-width: 300px; 
-    max-height: 300px;
-    padding-bottom: 5em;;
-}
-
-/* Story Content */
-
-.stories {
+.main-content {
     text-align: justify;
     padding-left: 3rem;
     padding-right: 2rem;
     flex: 3;
-    width: 50%;
+    width: 53%;
     border-right: 1px dashed grey;
 }
 
-.title-headline {
+.section-headline {
     width: 100%;
     color: #cdac81;
     font-family: 'Josefin Slab', serif;
@@ -172,22 +137,45 @@ img {
     margin-bottom: 2rem; 
 }
 
-
-.text {
-    width: 100%;
-    font-size: 1.1rem;
+.section-text p {
     line-height: 1.3;
-}
-
-.text p {
     margin-bottom: 1em;
 }
 
+/******************** Sidebar Right ******************/
 
-/* Footer */
+.sidebar-right {
+    min-height: 100%;
+    width: 25%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #00303f;
+    text-align: left;
+}
+
+.sidebar-right h2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem; 
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%; 
+    max-height: 100%;
+    padding-bottom: 5em;;
+}
+
+/******************** Footer ******************/
 
 footer {
     width: 100%;
     background-color: #f5f4f4;
+    color: #00303f;
+    text-align: center;
     min-height: 9vh;
+    margin-top: 3rem;
 }
