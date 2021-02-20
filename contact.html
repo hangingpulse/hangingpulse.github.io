@@ -11,12 +11,12 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">HENNING PULSS</a>
+        <a class="logo-link" href="index.html"><img class="logo" src="src/logo.png" alt="logo"></a>
         <nav>
             <a href="screenwriting.html">Screenwriting</a>
             <a href="coding.html">Coding</a>
             <a href="blog.html">Blog</a>
-            <a href="about.html">About Me</a>
+            <a href="about-me.html">About Me</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -29,27 +29,43 @@
                     <h1 class="section-headline">Contact me</h1>    
                     <div class="message-form">
                         <p>
-                            <label for="fullname">What's your name?</label>
-                            <br> 
-                            <input type="text" id="fullname" name="fullname">
+                            <input type="text" id="fullname" name="fullname" placeholder="Your name">
                         </p>
                         <p>
-                            <label for="email">How about your email?</label> 
-                            <br>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" placeholder="Your email">
                         </p>
                         <p>
-                            <textarea rows="10" cols="30" name="message">What's your message?</textarea>
+                            <textarea rows="10" cols="30" name="message">Your message</textarea>
                         </p>
                         <p>
-                            <input type="submit" value ="Send it!">
+                            <input type="submit" id="submit" value ="Send it!">
                         </p>
                     </div>
                 </section>
             </div>
             <aside class="sidebar-right">
                 <h2>Select the projects</h2>
-                <p class="sidebar-right-content">you want to know more about.</p>                
+                <p class="sidebar-right-content">you want to know more about.</p>
+                <p class="project-checkbox">
+                    <input type="checkbox" name="the-age-of-teleportation" id="the-age-of-teleportation">
+                    <label for="the-age-of-teleportation">The Age of Teleportation</label>
+                </p>
+                <p class="project-checkbox">
+                    <input type="checkbox" name="panta-rhei" id="panta-rhei">
+                    <label for="panta-rhei">Panta Rhei</label>
+                </p>
+                <p class="project-checkbox">
+                    <input type="checkbox" name="between-the-waves" id="between-the-waves">
+                    <label for="between-the-waves">Between The Waves</label>
+                </p>
+                <p class="project-checkbox">
+                    <input type="checkbox" name="two-hours-and-back" id="two-hours-and-back">
+                    <label for="two-hours-and-back">Two Hours And Back</label>
+                </p>
+                <p class="project-checkbox">
+                    <input type="checkbox" name="something-else" id="something-else">
+                    <label for="something-else">Something Else</label>
+                </p>              
             </aside>
         </form>
     </main>
