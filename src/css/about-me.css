@@ -74,7 +74,7 @@ main {
     width: 22%;
     min-height: 100%;
     margin-top: 9rem;
-    border-right: 3px solid grey;
+    border-right: 3px solid #cdac81;
     color: #00303f;
 }
 
@@ -90,13 +90,11 @@ main {
 .sidebar-left-content {
     font-size: 1.2em;
     text-align: right;
-    padding: 1.2rem 0.7rem;
-    margin-right: 1rem;
+    padding: 1.2rem 1rem;
 }
 
 .sidebar-left-content.selected {
     background: #cdac81;
-    border-radius: 15px;
 }
 
 .sidebar-left a {
@@ -130,7 +128,7 @@ main {
 }
 
 
-.section-headline {
+.main-headline {
     width: 100%;
     color: #cdac81;
     font-family: 'Josefin Slab', serif;
@@ -169,7 +167,12 @@ img {
     height: auto;
     max-width: 100%; 
     max-height: 100%;
-    padding-bottom: 5em;;
+    padding-bottom: 1em;
+}
+
+.sidebar-right-text {
+    color: #cdac81;
+    font-size: 1.3rem;
 }
 
 /******************** Footer ******************/
